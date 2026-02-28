@@ -12,7 +12,6 @@
   "author": "",
   "description": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "uuid": "^13.0.0"
   },
