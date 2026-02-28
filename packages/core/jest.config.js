@@ -3,7 +3,10 @@ export default {
   testEnvironment: 'node',
   testMatch: ['**/test/**/*.test.ts'],
   collectCoverage: true,
-  collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
+  collectCoverageFrom: [
+    '<rootDir>/src/**/*.ts',
+    '!src/shared/constants/*.ts',
+  ],
   coveragePathIgnorePatterns: [
     '/node_modules/',
     '/src/.*/index.ts', // Ignorar todos os arquivos index.ts em qualquer subdiretório de src
