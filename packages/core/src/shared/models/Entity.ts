@@ -1,6 +1,6 @@
 import Id from "./Id";
 
-interface EntityProps {
+export interface EntityProps {
     id?: string
 }
 

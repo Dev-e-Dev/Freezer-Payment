@@ -1,4 +1,5 @@
 import Id from "./Id";
-import Entity from "./Entity";
+import Entity, { EntityProps } from "./Entity";
 
 export { Id, Entity }
+export type {EntityProps}
