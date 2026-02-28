@@ -1,3 +1,4 @@
 import Id from "./Id";
+import Entity from "./Entity";
 
-export { Id }
+export { Id, Entity }
