@@ -32,7 +32,7 @@ export default class Validator {
         return value.length >= minimumSize ? null : ValidationError.new(error, value, {min: minimumSize})
     }
 
-    static regex(value: string, regex: RegExp, error: string): ValidationError | null {
+    static regex(value: any, regex: RegExp, error: string): ValidationError | null {
         return regex.test(value) ? null : ValidationError.new(error, value)
     }
 }
