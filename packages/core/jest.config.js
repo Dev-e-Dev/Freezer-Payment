@@ -2,6 +2,9 @@ export default {
   preset: 'ts-jest',
   testEnvironment: 'node',
   testMatch: ['**/test/**/*.test.ts'],
+  moduleNameMapper: {
+    '^@core/(.*)$': '<rootDir>/src/$1',
+  },
   collectCoverage: true,
   collectCoverageFrom: [
     '<rootDir>/src/**/*.ts',
