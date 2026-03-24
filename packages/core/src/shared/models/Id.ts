@@ -20,10 +20,10 @@ export default class Id {
     }
 
     equal(otherId: Id): boolean {
-        return this.value === otherId.value
+        return this.value === otherId?.value
     }
 
     different(otherId: Id): boolean {
-        return this.value !== otherId.value
+        return this.value !== otherId?.value
     }
 }
