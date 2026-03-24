@@ -23,7 +23,7 @@ export default abstract class Entity<EntityType, Props extends EntityProps> {
     }
 
     clone(newProps: Props): EntityType {
-        return new (this.constructor as any)({...this.props, newProps})
+        return new (this.constructor as any)({...this.props, ...newProps})
     }
 
 }
